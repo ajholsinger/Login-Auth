@@ -1,0 +1,19 @@
+#title {
+  font: sans-serif;
+  text-align: center;
+  margin: 40px;
+}
+
+.loginForm {
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 40px;
+  background-color: #e6e4e2;
+}
+
+.create {
+  margin: 25px;
+  font-size: 24px;
+  font-weight: 600;
+}
