@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Login Authentication Project</title>
@@ -7,12 +8,7 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
   </head>
   <body>
     <container-fluid class="html">
@@ -22,18 +18,16 @@
       <container class="body">
         <div class="loginForm">
           <div class="create">Create An Account!</div>
-          <form class="createAccount">
+          <form
+            class="createAccount"
+            action="/controllers/register"
+            method="POST"
+          >
             <input
-              class="firstname"
+              class="name"
               type="text"
-              name="firstname"
-              placeholder="First Name: "
-            /><br /><br />
-            <input
-              class="lastname"
-              type="text"
-              name="lastname"
-              placeholder="Last Name: "
+              name="name"
+              placeholder="Name: "
             /><br /><br />
             <input
               class="email"
@@ -53,4 +47,25 @@
       </container>
     </container-fluid>
   </body>
+  <style>
+    #title {
+      font: sans-serif;
+      text-align: center;
+      margin: 40px;
+    }
+
+    .loginForm {
+      width: 500px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 40px 40px;
+      background-color: #e6e4e2;
+    }
+
+    .create {
+      margin: 25px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  </style>
 </html>
